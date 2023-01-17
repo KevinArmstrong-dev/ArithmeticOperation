@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('compile') { 
             steps {
-                  withMaven(maven : 'maven_3_8_6'){
+                  withMaven(maven : 'maven'){
                      sh 'mvn clean compile'
                 echo "pass"
                   }
